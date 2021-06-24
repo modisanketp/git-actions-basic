@@ -17,6 +17,7 @@ jobs:
         shell: python
   windows-command:
     runs-on: windows-latest
+    needs: ["run-shell-command"]
     steps:
       - name: current directory
         run: Get-Location
