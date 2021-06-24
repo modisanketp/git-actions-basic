@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: run-action
         id: run_action
-        uses: actions/hello-world-javascript-action
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Sanket
       - name: show-output
