@@ -15,3 +15,11 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: current directory
+        run: Get-Location
+      - name: current Location
+        run: pwd
+        shell: bash
